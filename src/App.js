@@ -1,10 +1,8 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   BrowserRouter,
-  // Link
+  Routes,
+  Route
 } from "react-router-dom";
 
 import Home from './pages/Home'
@@ -18,10 +16,6 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
-            {/* <Switch>
-              <Route exact path="/">
-                <Home/>
-              </Route> */}
               <Route path="/qr_generator" element={<QRgen/>} />
               <Route path="/qr_scanner" element={<QRscan/>} />
           </Routes>
