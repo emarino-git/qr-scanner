@@ -14,7 +14,7 @@ function Home() {
 
             {/* <Grid container spacing={6}> */}
                 {/* <Grid item xs={6}> */}
-                    <Link to="/qr_generator">
+                    {/* <Link to="/qr_generator">
                     <Button variant="contained" size="large" color="primary">
                         <Icon 
                         style={{padding:10}}
@@ -24,7 +24,7 @@ function Home() {
                         color="white"
                         />
                     </Button>
-                    </Link>
+                    </Link> */}
                 {/* </Grid> */}
                 {/* <Grid item xs={6}> */}
                     <Link to="/qr_scanner">
