@@ -1,8 +1,9 @@
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
+  BrowserRouter,
   // Link
 } from "react-router-dom";
 
@@ -14,25 +15,17 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-      
-        <Router>
-          <div>
-
-            <Switch>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            {/* <Switch>
               <Route exact path="/">
                 <Home/>
-              </Route>
-              <Route path="/qr_generator">
-                <QRgen/>
-              </Route>
-              <Route path="/qr_scanner">
-                <QRscan/>
-              </Route>
-            </Switch>
-
-          </div>
-        </Router>
-
+              </Route> */}
+              <Route path="/qr_generator" element={<QRgen/>} />
+              <Route path="/qr_scanner" element={<QRscan/>} />
+          </Routes>
+        </BrowserRouter>  
       </div>
     </div>
   );
