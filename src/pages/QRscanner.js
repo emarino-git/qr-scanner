@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Fab, TextareaAutosize} from '@material-ui/core'
+import {Fab} from '@material-ui/core'
 import {ArrowBack} from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QrScan from 'react-qr-reader'
@@ -24,7 +24,7 @@ function QRscanner() {
     var key = '0'
 
     for (const keyFind of iterator) {
-        if (inventario[keyFind]['# INVENTARIO'] == qrscan){
+        if (inventario[keyFind]['# INVENTARIO'] === qrscan){
             key = keyFind
         }
     }
