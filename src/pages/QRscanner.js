@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Fab } from '@material-ui/core'
 import { ArrowBack } from '@material-ui/icons'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import QrScan from 'react-qr-reader'
 import { inventario } from '../data/inventario'
+// import FormDialog from '../components/FormDialog'
 
 export default function QRscanner() {
 
@@ -45,6 +46,9 @@ export default function QRscanner() {
 
             <div className='qr-resultados'>
                 <br></br>
+                <br></br>
+                {/* <Formdialog /> */}
+                {/* <button className='qr-button' onChange={} >Ingresar código Manual</button> */}
                 <p># INVENTARIO: {qrscan}</p>
                 <p>TIPO DE EQUIPO: {inventario[key]['TIPO DE EQUIPO']}</p>
                 <p>Marca: {inventario[key]['Marca']}</p>
