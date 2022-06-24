@@ -1,6 +1,6 @@
 import { Button, Typography} from '@material-ui/core';
 import Icon from '@mdi/react'
-import { mdiQrcodeScan } from '@mdi/js';
+import { mdiQrcodeScan, mdiQrcode } from '@mdi/js';
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
             </Typography>
 
             {/* <Grid container spacing={6}> */}
-                {/* <Grid item xs={6}>
+                {/* <Grid item xs={6}> */}
                     <Link to="/qr_generator">
                     <Button variant="contained" size="large" color="primary">
                         <Icon 
@@ -25,7 +25,7 @@ function Home() {
                         />
                     </Button>
                     </Link>
-                </Grid> */}
+                {/* </Grid> */}
                 {/* <Grid item xs={6}> */}
                     <Link to="/qr_scanner">
                     <Button variant="contained" size="large" color="primary">
