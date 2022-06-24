@@ -9477,7 +9477,7 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react-router-dom@^5.2.0":
+"react-router-dom@^5.3.3":
   "integrity" "sha512-Ov0tGPMBgqmbu5CDmN++tv2HQ9HlWDuWIIqn4b88gjlAN5IHI+4ZUZRcpz9Hl0azFIwihbLDYw1OiHGRo7ZIng=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.3.3.tgz"
   "version" "5.3.3"
