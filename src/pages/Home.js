@@ -1,6 +1,6 @@
 import { Button, Typography} from '@material-ui/core';
 import Icon from '@mdi/react'
-import { mdiQrcodeScan, mdiQrcode } from '@mdi/js';
+import { mdiQrcodeScan } from '@mdi/js';
 import { Link } from "react-router-dom";
 
 function Home() {
