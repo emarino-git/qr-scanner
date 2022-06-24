@@ -8,12 +8,12 @@ function Home() {
     return (
         <div>
 
-            <Typography style={{margin:30}} variant="h2">
-            React QR Code
+            <Typography style={{margin:30}} variant="h3">
+            Escanear código QR
             </Typography>
 
-            <Grid container spacing={6}>
-                <Grid item xs={6}>
+            {/* <Grid container spacing={6}> */}
+                {/* <Grid item xs={6}>
                     <Link to="/qr_generator">
                     <Button variant="contained" size="large" color="primary">
                         <Icon 
@@ -25,8 +25,8 @@ function Home() {
                         />
                     </Button>
                     </Link>
-                </Grid>
-                <Grid item xs={6}>
+                </Grid> */}
+                {/* <Grid item xs={6}> */}
                     <Link to="/qr_scanner">
                     <Button variant="contained" size="large" color="primary">
                         <Icon 
@@ -38,8 +38,8 @@ function Home() {
                         />
                     </Button>
                     </Link>
-                </Grid>
-            </Grid>
+                {/* </Grid> */}
+            {/* </Grid> */}
         
         </div>
     );
