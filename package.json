@@ -43,7 +43,10 @@
       "last 1 safari version"
     ]
   },
-  "nohoist": [
-    "**/babel-preset-react-app/@babel/runtime"
-]
+  "resolutions": {
+    "**/@babel/runtime": "7.5.0"
+  },
+  "presets": [
+    ["react-app", { "absoluteRuntime": false }]
+  ]
 }
