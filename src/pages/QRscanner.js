@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Fab } from '@material-ui/core'
-import { ArrowBack } from '@material-ui/icons'
+import Fab from '@mui/material/Fab';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Link } from "react-router-dom"
 import QrScan from 'react-qr-reader'
 import { inventario } from '../data/inventario'
@@ -32,7 +32,7 @@ export default function QRscanner() {
         <div className='page'>
             <Link to="/">
                 <Fab color="primary">
-                    <ArrowBack />
+                    <ArrowBackIosIcon />
                 </Fab>
             </Link>
             <div style={{ marginTop: 30 }}>
