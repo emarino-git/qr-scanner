@@ -36,20 +36,16 @@ export default function QRscanner() {
                     <ArrowBackIosIcon />
                 </Fab>
             </Link>
-            <div style={{ marginTop: 30 }}>
-                <QrScan
-                    delay={300}
-                    onError={handleError}
-                    onScan={handleScan}
-                    style={{ height: 240, width: 320 }}
-                />
-            </div>
-
+            <QrScan
+                delay={300}
+                onError={handleError}
+                onScan={handleScan}
+                style={{ height: 240, width: 320 }}
+            />
             <div className='qr-resultados'>
                 <br></br>
                 <br></br>
                 <FormDialogQRManual />
-                {/* <button className='qr-button' onChange={} >Ingresar código Manual</button> */}
                 <p># INVENTARIO: {qrscan}</p>
                 <p>TIPO DE EQUIPO: {inventario[key]['TIPO DE EQUIPO']}</p>
                 <p>Marca: {inventario[key]['Marca']}</p>
