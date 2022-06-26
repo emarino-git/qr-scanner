@@ -20,7 +20,7 @@ export default function FormDialogQRMovimiento() {
 
   return (
     <div>
-      <Button className="button" variant="contained" onClick={handleClickOpen}>
+      <Button className="button" variant="contained" onClick={handleClickOpen} style={{marginTop: 15}} >
         Registrar Movimiento
       </Button>
       <Dialog open={open} onClose={handleClose}>

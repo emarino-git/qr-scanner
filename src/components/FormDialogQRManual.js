@@ -20,7 +20,7 @@ export default function FormDialogQRManual() {
 
   return (
     <div>
-      <Button className="button" variant="outlined" onClick={handleClickOpen}>
+      <Button className="button" variant="outlined" onClick={handleClickOpen} style={{marginBottom: 15}}>
         Ingreso de código Manual
       </Button>
       <Dialog open={open} onClose={handleClose}>

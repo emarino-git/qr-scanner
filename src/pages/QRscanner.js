@@ -43,15 +43,14 @@ export default function QRscanner() {
                 style={{ height: 240, width: 320 }}
             />
             <div className='qr-resultados'>
-                <br></br>
-                <br></br>
                 <FormDialogQRManual />
+            
                 <p># INVENTARIO: {qrscan}</p>
                 <p>TIPO DE EQUIPO: {inventario[key]['TIPO DE EQUIPO']}</p>
                 <p>Marca: {inventario[key]['Marca']}</p>
                 <p>Modelo: {inventario[key]['Modelo']}</p>
                 <p>N° Serie: {inventario[key]['N� Serie']}</p>
-                <FormDialogQRMovimiento />
+                <FormDialogQRMovimiento className="button" />
             </div>
         </div>
     );
