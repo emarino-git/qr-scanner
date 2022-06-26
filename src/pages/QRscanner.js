@@ -4,7 +4,8 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Link } from "react-router-dom"
 import QrScan from 'react-qr-reader'
 import { inventario } from '../data/inventario'
-// import FormDialog from '../components/FormDialog'
+import FormDialogQRManual from '../components/FormDialogQRManual'
+import FormDialogQRMovimiento from '../components/FormDialogQRMovimiento'
 
 export default function QRscanner() {
 
@@ -47,16 +48,14 @@ export default function QRscanner() {
             <div className='qr-resultados'>
                 <br></br>
                 <br></br>
-                {/* <Formdialog /> */}
+                <FormDialogQRManual />
                 {/* <button className='qr-button' onChange={} >Ingresar código Manual</button> */}
                 <p># INVENTARIO: {qrscan}</p>
                 <p>TIPO DE EQUIPO: {inventario[key]['TIPO DE EQUIPO']}</p>
                 <p>Marca: {inventario[key]['Marca']}</p>
                 <p>Modelo: {inventario[key]['Modelo']}</p>
                 <p>N° Serie: {inventario[key]['N� Serie']}</p>
-                <button className='qr-button' id='registrar-movimiento' >
-                    Registrar Movimiento
-                </button>
+                <FormDialogQRMovimiento />
             </div>
         </div>
     );
