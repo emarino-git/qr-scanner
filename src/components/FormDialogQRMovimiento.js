@@ -6,9 +6,11 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { useNavigate } from 'react-router-dom';
 
 export default function FormDialogQRMovimiento() {
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate()
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -16,6 +18,12 @@ export default function FormDialogQRMovimiento() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleSubmit = () => {
+    setOpen(false);
+    
+    navigate('/')
   };
 
   return (
@@ -50,7 +58,7 @@ export default function FormDialogQRMovimiento() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancelar</Button>
-          <Button onClick={handleClose}>Aceptar</Button>
+          <Button onClick={handleSubmit}>Aceptar</Button>
         </DialogActions>
       </Dialog>
     </div>
